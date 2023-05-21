@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Bibliothèque d'images : background-image: url("https://w0.peakpx.com/wallpaper/385/441/HD-wallpaper-space-astronaut-purple-astronaut.jpg"); */
+
+body {
+  min-height: 100vh;
+  background-image: url("https://wallpapers.com/images/featured/universe-qs811igzbabl1m0o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%) contrast(120%) hue-rotate(10deg);
+}
+
+.bghdm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 110% 110%;
+  background-image:  url("https://cdn.pixabay.com/photo/2011/12/14/12/21/orion-nebula-11107_960_720.jpg");
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
